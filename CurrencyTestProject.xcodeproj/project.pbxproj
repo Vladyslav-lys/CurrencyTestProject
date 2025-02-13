@@ -14,6 +14,8 @@
 		273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DC32D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld */; };
 		273E0DC72D5CFFAA0044F798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273E0DC62D5CFFAA0044F798 /* Assets.xcassets */; };
 		273E0DCA2D5CFFAA0044F798 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 273E0DC92D5CFFAA0044F798 /* Base */; };
+		273E0DD32D5E24570044F798 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 273E0DD22D5E24570044F798 /* RswiftLibrary */; };
+		273E0DD62D5E24D90044F798 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 273E0DD52D5E24D90044F798 /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273E0DD32D5E24570044F798 /* RswiftLibrary in Frameworks */,
+				273E0DD62D5E24D90044F798 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,10 @@
 			dependencies = (
 			);
 			name = CurrencyTestProject;
+			packageProductDependencies = (
+				273E0DD22D5E24570044F798 /* RswiftLibrary */,
+				273E0DD52D5E24D90044F798 /* Apollo */,
+			);
 			productName = CurrencyTestProject;
 			productReference = 273E0DB72D5CFFA90044F798 /* CurrencyTestProject.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,10 @@
 				Base,
 			);
 			mainGroup = 273E0DAE2D5CFFA90044F798;
+			packageReferences = (
+				273E0DD12D5E24570044F798 /* XCRemoteSwiftPackageReference "R" */,
+				273E0DD42D5E24D90044F798 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 273E0DB82D5CFFA90044F798 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +389,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		273E0DD12D5E24570044F798 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
+		273E0DD42D5E24D90044F798 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		273E0DD22D5E24570044F798 /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273E0DD12D5E24570044F798 /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		273E0DD52D5E24D90044F798 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273E0DD42D5E24D90044F798 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		273E0DC32D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld */ = {
