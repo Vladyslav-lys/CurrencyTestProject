@@ -20,6 +20,12 @@
 		273E0DFD2D5E50200044F798 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 273E0DFC2D5E50200044F798 /* schema.graphqls */; };
 		273E0E102D5E59330044F798 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 273E0E0F2D5E59330044F798 /* Apollo */; };
 		273E0E142D5E5FDB0044F798 /* RatesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 273E0E132D5E5FDB0044F798 /* RatesAPI */; };
+		273E0E162D5E66730044F798 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E152D5E66730044F798 /* Network.swift */; };
+		273E0E1F2D5E6C3A0044F798 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E1E2D5E6C390044F798 /* NetworkError.swift */; };
+		273E0E292D5E79E80044F798 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E282D5E79E80044F798 /* APIError.swift */; };
+		273E0E2C2D5E7F960044F798 /* NetworkInterceptorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E2B2D5E7F960044F798 /* NetworkInterceptorsProvider.swift */; };
+		273E0E2E2D5E80120044F798 /* ApiKeyIncerceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E2D2D5E80120044F798 /* ApiKeyIncerceptor.swift */; };
+		273E0E302D5E90B80044F798 /* DecodingError+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E2F2D5E90B80044F798 /* DecodingError+Debug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		273E0DE02D5E303B0044F798 /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
 		273E0DF12D5E36330044F798 /* LatestRates.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LatestRates.graphql; sourceTree = "<group>"; };
 		273E0DFC2D5E50200044F798 /* schema.graphqls */ = {isa = PBXFileReference; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		273E0E152D5E66730044F798 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		273E0E1E2D5E6C390044F798 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		273E0E282D5E79E80044F798 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		273E0E2B2D5E7F960044F798 /* NetworkInterceptorsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorsProvider.swift; sourceTree = "<group>"; };
+		273E0E2D2D5E80120044F798 /* ApiKeyIncerceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyIncerceptor.swift; sourceTree = "<group>"; };
+		273E0E2F2D5E90B80044F798 /* DecodingError+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecodingError+Debug.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +130,11 @@
 		273E0DDF2D5E303B0044F798 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				273E0E2A2D5E7F640044F798 /* Interceptors */,
+				273E0E262D5E79CF0044F798 /* Models */,
 				273E0DED2D5E30BB0044F798 /* GraphQL */,
 				273E0DE02D5E303B0044F798 /* NetworkLayer.h */,
+				273E0E152D5E66730044F798 /* Network.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -131,6 +146,33 @@
 				273E0DFC2D5E50200044F798 /* schema.graphqls */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		273E0E262D5E79CF0044F798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E272D5E79DD0044F798 /* Error */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		273E0E272D5E79DD0044F798 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E2F2D5E90B80044F798 /* DecodingError+Debug.swift */,
+				273E0E1E2D5E6C390044F798 /* NetworkError.swift */,
+				273E0E282D5E79E80044F798 /* APIError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		273E0E2A2D5E7F640044F798 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E2B2D5E7F960044F798 /* NetworkInterceptorsProvider.swift */,
+				273E0E2D2D5E80120044F798 /* ApiKeyIncerceptor.swift */,
+			);
+			path = Interceptors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273E0E162D5E66730044F798 /* Network.swift in Sources */,
+				273E0E1F2D5E6C3A0044F798 /* NetworkError.swift in Sources */,
+				273E0E2E2D5E80120044F798 /* ApiKeyIncerceptor.swift in Sources */,
+				273E0E2C2D5E7F960044F798 /* NetworkInterceptorsProvider.swift in Sources */,
+				273E0E302D5E90B80044F798 /* DecodingError+Debug.swift in Sources */,
+				273E0E292D5E79E80044F798 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +465,7 @@
 		273E0DCF2D5CFFAA0044F798 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +498,7 @@
 		273E0DD02D5CFFAA0044F798 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -492,6 +542,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -534,6 +585,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetworkLayer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
