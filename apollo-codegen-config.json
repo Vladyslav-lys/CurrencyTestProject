@@ -1,0 +1,43 @@
+{
+  "schemaNamespace" : "RatesAPI",
+  "input" : {
+    "operationSearchPaths" : [
+      "**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "**/*.graphqls"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./NetworkLayer/RatesAPI",
+      "moduleType" : {
+        "swiftPackageManager" : {
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  },
+  "schemaDownload": {
+        "downloadMethod": {
+            "introspection": {
+                "endpointURL": "https://swop.cx/graphql",
+                "httpMethod": {
+                    "POST": {}
+                },
+                "includeDeprecatedInputValues": false,
+                "outputFormat": "SDL"
+            }
+        },
+        "downloadTimeout": 60,
+        "headers": {},
+        "outputPath": "./NetworkLayer/GraphQL/schema.graphqls"
+    }
+}

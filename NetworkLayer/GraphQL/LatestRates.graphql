@@ -1,0 +1,8 @@
+query LatestRates {
+  latest {
+    date
+    baseCurrency
+    quoteCurrency
+    quote
+  }
+}
