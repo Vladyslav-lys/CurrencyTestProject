@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		273E0DBB2D5CFFA90044F798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DBA2D5CFFA90044F798 /* AppDelegate.swift */; };
-		273E0DBD2D5CFFA90044F798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DBC2D5CFFA90044F798 /* SceneDelegate.swift */; };
 		273E0DBF2D5CFFA90044F798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DBE2D5CFFA90044F798 /* ViewController.swift */; };
 		273E0DC22D5CFFA90044F798 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 273E0DC12D5CFFA90044F798 /* Base */; };
 		273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DC32D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		273E0DB72D5CFFA90044F798 /* CurrencyTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		273E0DBA2D5CFFA90044F798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		273E0DBC2D5CFFA90044F798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		273E0DBE2D5CFFA90044F798 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		273E0DC12D5CFFA90044F798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		273E0DC42D5CFFA90044F798 /* CurrencyTestProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CurrencyTestProject.xcdatamodel; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				273E0DBA2D5CFFA90044F798 /* AppDelegate.swift */,
-				273E0DBC2D5CFFA90044F798 /* SceneDelegate.swift */,
 				273E0DBE2D5CFFA90044F798 /* ViewController.swift */,
 				273E0DC02D5CFFA90044F798 /* Main.storyboard */,
 				273E0DC62D5CFFAA0044F798 /* Assets.xcassets */,
@@ -156,7 +153,6 @@
 				273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */,
 				273E0DBF2D5CFFA90044F798 /* ViewController.swift in Sources */,
 				273E0DBB2D5CFFA90044F798 /* AppDelegate.swift in Sources */,
-				273E0DBD2D5CFFA90044F798 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
