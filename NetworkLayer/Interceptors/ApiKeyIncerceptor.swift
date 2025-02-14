@@ -8,19 +8,19 @@
 import Apollo
 import ApolloAPI
 
-final class ApiKeyIncerceptor: ApolloInterceptor {
-    var id: String
+public final class ApiKeyIncerceptor: ApolloInterceptor {
+    public var id: String
     private var apiKey: String?
     
-    init(id: String = UUID().uuidString) {
+    public init(id: String = UUID().uuidString) {
         self.id = id
     }
     
-    func setApiKey(_ apiKey: String) {
+    public func setApiKey(_ apiKey: String) {
         self.apiKey = apiKey
     }
     
-    func interceptAsync<Operation>(
+    public func interceptAsync<Operation>(
         chain: RequestChain,
         request: HTTPRequest<Operation>,
         response: HTTPResponse<Operation>?,

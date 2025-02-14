@@ -8,14 +8,14 @@
 import DatabaseLayer
 import NetworkLayer
 
-enum ServiceError: Error {
+public enum ServiceError: Error {
     case network(error: NetworkError)
     case database(error: DatabaseError)
     case undefined
 }
 
 extension ServiceError: LocalizedError {
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .network(let error): error.errorDescription
         case .database(let error): error.errorDescription

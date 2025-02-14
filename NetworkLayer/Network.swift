@@ -25,7 +25,7 @@ final public class Network {
     public var isConnected = CurrentValueSubject<Bool, Never>(false)
     
     // MARK: - Initialize
-    init(baseURL: URL, interceptors: [ApolloInterceptor]) {
+    public init(baseURL: URL, interceptors: [ApolloInterceptor]) {
         self.baseURL = baseURL
         interceptorProvider = NetworkInterceptorsProvider(interceptors: interceptors, store: store)
         networkTransport = RequestChainNetworkTransport(interceptorProvider: interceptorProvider, endpointURL: baseURL)

@@ -42,6 +42,7 @@
 		273E0E902D5FA9180044F798 /* ServiceContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E8F2D5FA9180044F798 /* ServiceContext.swift */; };
 		273E0E932D5FA9C80044F798 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E922D5FA9C80044F798 /* BaseService.swift */; };
 		273E0E9A2D5FAC250044F798 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E992D5FAC250044F798 /* ServiceError.swift */; };
+		273E0E9C2D5FAE280044F798 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E9B2D5FAE280044F798 /* Platform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		273E0E8F2D5FA9180044F798 /* ServiceContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContext.swift; sourceTree = "<group>"; };
 		273E0E922D5FA9C80044F798 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		273E0E992D5FAC250044F798 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		273E0E9B2D5FAE280044F798 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				273E0DBE2D5CFFA90044F798 /* ViewController.swift */,
 				273E0DC82D5CFFAA0044F798 /* LaunchScreen.storyboard */,
 				273E0DD72D5E2E6A0044F798 /* AppCoordinator.swift */,
+				273E0E9B2D5FAE280044F798 /* Platform.swift */,
 			);
 			path = CurrencyTestProject;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273E0E9C2D5FAE280044F798 /* Platform.swift in Sources */,
 				273E0DD82D5E2E6A0044F798 /* AppCoordinator.swift in Sources */,
 				273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */,
 				273E0DBF2D5CFFA90044F798 /* ViewController.swift in Sources */,

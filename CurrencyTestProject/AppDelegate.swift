@@ -13,13 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     // MARK: - Private Properties
+    private lazy var platform = Platform()
     private lazy var appCoordinator = AppCoordinator()
     
     // MARK: - Methods
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = appCoordinator.window
-        return true
+        return platform.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }
 
