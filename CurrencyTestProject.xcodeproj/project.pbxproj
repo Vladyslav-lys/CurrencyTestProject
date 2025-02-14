@@ -35,6 +35,7 @@
 		273E0E642D5F835D0044F798 /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E632D5F835D0044F798 /* DatabaseError.swift */; };
 		273E0E662D5F8AC50044F798 /* CDDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E652D5F8AC50044F798 /* CDDatabase.swift */; };
 		273E0E702D5F9ED20044F798 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 273E0E6E2D5F9ED20044F798 /* Localizable.strings */; };
+		273E0E772D5FA0E20044F798 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E762D5FA0E20044F798 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		273E0E632D5F835D0044F798 /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
 		273E0E652D5F8AC50044F798 /* CDDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDDatabase.swift; sourceTree = "<group>"; };
 		273E0E6F2D5F9ED20044F798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		273E0E742D5FA07E0044F798 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		273E0E762D5FA0E20044F798 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,7 @@
 		273E0E6A2D5F9E470044F798 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				273E0E732D5FA06C0044F798 /* Configurations */,
 				273E0E6D2D5F9EC00044F798 /* String */,
 				273E0DCB2D5CFFAA0044F798 /* Info.plist */,
 				273E0DC62D5CFFAA0044F798 /* Assets.xcassets */,
@@ -262,6 +266,15 @@
 				273E0E6E2D5F9ED20044F798 /* Localizable.strings */,
 			);
 			path = String;
+			sourceTree = "<group>";
+		};
+		273E0E732D5FA06C0044F798 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E742D5FA07E0044F798 /* Config.xcconfig */,
+				273E0E762D5FA0E20044F798 /* Environment.swift */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,6 +448,7 @@
 				273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */,
 				273E0DBF2D5CFFA90044F798 /* ViewController.swift in Sources */,
 				273E0DBB2D5CFFA90044F798 /* AppDelegate.swift in Sources */,
+				273E0E772D5FA0E20044F798 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +637,7 @@
 		};
 		273E0DCF2D5CFFAA0044F798 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273E0E742D5FA07E0044F798 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -656,6 +671,7 @@
 		};
 		273E0DD02D5CFFAA0044F798 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273E0E742D5FA07E0044F798 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

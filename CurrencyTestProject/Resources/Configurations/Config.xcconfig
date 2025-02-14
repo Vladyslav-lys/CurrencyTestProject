@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  CurrencyTestProject
+//
+//  Created by Vladyslav Lysenko on 14.02.2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+API_KEY = 6ec1d730e383492d9bea64e9dab70b26ab743a16e5847970d03af79e7d69654e
+BASE_URL = https:/$()/swop.cx/graphql
