@@ -279,6 +279,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				273E0E682D5F9DB00044F798 /* PBXTargetDependency */,
 				273E0DE32D5E303B0044F798 /* PBXTargetDependency */,
 				273E0E4D2D5F4E810044F798 /* PBXTargetDependency */,
 			);
@@ -454,6 +455,10 @@
 			isa = PBXTargetDependency;
 			target = 273E0E472D5F4E810044F798 /* DatabaseLayer */;
 			targetProxy = 273E0E4C2D5F4E810044F798 /* PBXContainerItemProxy */;
+		};
+		273E0E682D5F9DB00044F798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 273E0E672D5F9DB00044F798 /* RswiftGenerateInternalResources */;
 		};
 /* End PBXTargetDependency section */
 
@@ -895,6 +900,11 @@
 		273E0E132D5E5FDB0044F798 /* RatesAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RatesAPI;
+		};
+		273E0E672D5F9DB00044F798 /* RswiftGenerateInternalResources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273E0DF92D5E4D380044F798 /* XCRemoteSwiftPackageReference "R" */;
+			productName = "plugin:RswiftGenerateInternalResources";
 		};
 /* End XCSwiftPackageProductDependency section */
 
