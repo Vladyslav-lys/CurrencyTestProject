@@ -36,6 +36,12 @@
 		273E0E662D5F8AC50044F798 /* CDDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E652D5F8AC50044F798 /* CDDatabase.swift */; };
 		273E0E702D5F9ED20044F798 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 273E0E6E2D5F9ED20044F798 /* Localizable.strings */; };
 		273E0E772D5FA0E20044F798 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E762D5FA0E20044F798 /* Environment.swift */; };
+		273E0E862D5FA9030044F798 /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = 273E0E852D5FA9030044F798 /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		273E0E892D5FA9030044F798 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273E0E832D5FA9030044F798 /* Services.framework */; };
+		273E0E8A2D5FA9030044F798 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273E0E832D5FA9030044F798 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		273E0E902D5FA9180044F798 /* ServiceContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E8F2D5FA9180044F798 /* ServiceContext.swift */; };
+		273E0E932D5FA9C80044F798 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E922D5FA9C80044F798 /* BaseService.swift */; };
+		273E0E9A2D5FAC250044F798 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E992D5FAC250044F798 /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,13 @@
 			remoteGlobalIDString = 273E0E472D5F4E810044F798;
 			remoteInfo = DatabaseLayer;
 		};
+		273E0E872D5FA9030044F798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273E0DAF2D5CFFA90044F798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273E0E822D5FA9030044F798;
+			remoteInfo = Services;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +76,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				273E0DE52D5E303B0044F798 /* NetworkLayer.framework in Embed Frameworks */,
+				273E0E8A2D5FA9030044F798 /* Services.framework in Embed Frameworks */,
 				273E0E4F2D5F4E810044F798 /* DatabaseLayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -99,6 +113,11 @@
 		273E0E6F2D5F9ED20044F798 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		273E0E742D5FA07E0044F798 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		273E0E762D5FA0E20044F798 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		273E0E832D5FA9030044F798 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		273E0E852D5FA9030044F798 /* Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
+		273E0E8F2D5FA9180044F798 /* ServiceContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContext.swift; sourceTree = "<group>"; };
+		273E0E922D5FA9C80044F798 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		273E0E992D5FAC250044F798 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +127,7 @@
 			files = (
 				273E0DE42D5E303B0044F798 /* NetworkLayer.framework in Frameworks */,
 				273E0E4E2D5F4E810044F798 /* DatabaseLayer.framework in Frameworks */,
+				273E0E892D5FA9030044F798 /* Services.framework in Frameworks */,
 				273E0DFB2D5E4D380044F798 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +148,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		273E0E802D5FA9030044F798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,6 +164,7 @@
 				273E0DB92D5CFFA90044F798 /* CurrencyTestProject */,
 				273E0DDF2D5E303B0044F798 /* NetworkLayer */,
 				273E0E492D5F4E810044F798 /* DatabaseLayer */,
+				273E0E842D5FA9030044F798 /* Services */,
 				273E0DB82D5CFFA90044F798 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +175,7 @@
 				273E0DB72D5CFFA90044F798 /* CurrencyTestProject.app */,
 				273E0DDE2D5E303A0044F798 /* NetworkLayer.framework */,
 				273E0E482D5F4E810044F798 /* DatabaseLayer.framework */,
+				273E0E832D5FA9030044F798 /* Services.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,6 +306,41 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
+		273E0E842D5FA9030044F798 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E962D5FABF50044F798 /* Components */,
+				273E0E912D5FA9BA0044F798 /* Base */,
+				273E0E852D5FA9030044F798 /* Services.h */,
+				273E0E8F2D5FA9180044F798 /* ServiceContext.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		273E0E912D5FA9BA0044F798 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E922D5FA9C80044F798 /* BaseService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		273E0E962D5FABF50044F798 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E982D5FABFC0044F798 /* Error */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		273E0E982D5FABFC0044F798 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				273E0E992D5FAC250044F798 /* ServiceError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -293,6 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				273E0E4B2D5F4E810044F798 /* DatabaseLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273E0E7E2D5FA9030044F798 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273E0E862D5FA9030044F798 /* Services.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +386,7 @@
 				273E0E682D5F9DB00044F798 /* PBXTargetDependency */,
 				273E0DE32D5E303B0044F798 /* PBXTargetDependency */,
 				273E0E4D2D5F4E810044F798 /* PBXTargetDependency */,
+				273E0E882D5FA9030044F798 /* PBXTargetDependency */,
 			);
 			name = CurrencyTestProject;
 			packageProductDependencies = (
@@ -363,6 +436,24 @@
 			productReference = 273E0E482D5F4E810044F798 /* DatabaseLayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		273E0E822D5FA9030044F798 /* Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273E0E8B2D5FA9030044F798 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildPhases = (
+				273E0E7E2D5FA9030044F798 /* Headers */,
+				273E0E7F2D5FA9030044F798 /* Sources */,
+				273E0E802D5FA9030044F798 /* Frameworks */,
+				273E0E812D5FA9030044F798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Services;
+			productName = Services;
+			productReference = 273E0E832D5FA9030044F798 /* Services.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -381,6 +472,10 @@
 						LastSwiftMigration = 1540;
 					};
 					273E0E472D5F4E810044F798 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					273E0E822D5FA9030044F798 = {
 						CreatedOnToolsVersion = 15.4;
 						LastSwiftMigration = 1540;
 					};
@@ -407,6 +502,7 @@
 				273E0DB62D5CFFA90044F798 /* CurrencyTestProject */,
 				273E0DDD2D5E303A0044F798 /* NetworkLayer */,
 				273E0E472D5F4E810044F798 /* DatabaseLayer */,
+				273E0E822D5FA9030044F798 /* Services */,
 			);
 		};
 /* End PBXProject section */
@@ -431,6 +527,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		273E0E462D5F4E810044F798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		273E0E812D5FA9030044F798 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -477,6 +580,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		273E0E7F2D5FA9030044F798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273E0E9A2D5FAC250044F798 /* ServiceError.swift in Sources */,
+				273E0E932D5FA9C80044F798 /* BaseService.swift in Sources */,
+				273E0E902D5FA9180044F798 /* ServiceContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -493,6 +606,11 @@
 		273E0E682D5F9DB00044F798 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 273E0E672D5F9DB00044F798 /* RswiftGenerateInternalResources */;
+		};
+		273E0E882D5FA9030044F798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273E0E822D5FA9030044F798 /* Services */;
+			targetProxy = 273E0E872D5FA9030044F798 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -863,6 +981,81 @@
 			};
 			name = Release;
 		};
+		273E0E8C2D5FA9030044F798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 84K2WHDARM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslav.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		273E0E8D2D5FA9030044F798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 84K2WHDARM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslav.Services;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -898,6 +1091,15 @@
 			buildConfigurations = (
 				273E0E512D5F4E810044F798 /* Debug */,
 				273E0E522D5F4E810044F798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		273E0E8B2D5FA9030044F798 /* Build configuration list for PBXNativeTarget "Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				273E0E8C2D5FA9030044F798 /* Debug */,
+				273E0E8D2D5FA9030044F798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
