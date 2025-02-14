@@ -68,12 +68,9 @@ extension CDDatabase {
     
     private func managedObjectContext(for context: Context) -> NSManagedObjectContext {
         switch context {
-        case .main:
-            return mainContext
-        case .background:
-            return backgroundContext
-        case .current:
-            return Thread.isMainThread ? mainContext : backgroundContext
+        case .main: mainContext
+        case .background: backgroundContext
+        case .current: Thread.isMainThread ? mainContext : backgroundContext
         }
     }
 }
