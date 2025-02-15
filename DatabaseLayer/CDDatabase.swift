@@ -23,7 +23,7 @@ public final class CDDatabase {
     public let mainContext: NSManagedObjectContext
     
     // MARK: - Lifecycle
-    public init(containerName: String = "Model") {
+    public init(containerName: String = "CurrencyTestProject") {
         persistentContainer = NSPersistentContainer(name: containerName)
         self.persistentContainer.viewContext.automaticallyMergesChangesFromParent = true
         self.persistentContainer.viewContext.mergePolicy = NSMergePolicy.overwrite
