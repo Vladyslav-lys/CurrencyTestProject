@@ -17,7 +17,9 @@ final class AppCoordinator {
     }
     
     private func start() {
-        window.rootViewController = ViewController()
+        let presenter = UINavigationController()
+        window.rootViewController = presenter
+        RatesCoordinator(presenter: presenter).start()
         window.makeKeyAndVisible()
     }
 }
