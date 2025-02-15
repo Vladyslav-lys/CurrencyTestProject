@@ -11,6 +11,9 @@ final class AppCoordinator {
     // MARK: - Public Properties
     let window: UIWindow = UIWindow(frame: UIScreen.main.bounds)
     
+    // MARK: - Private Properties
+    private var ratesCoordinator: Coordinator?
+    
     // MARK: - Initialize
     init() {
         start()
@@ -19,7 +22,8 @@ final class AppCoordinator {
     private func start() {
         let presenter = UINavigationController()
         window.rootViewController = presenter
-        RatesCoordinator(presenter: presenter).start()
+        ratesCoordinator = RatesCoordinator(presenter: presenter)
+        ratesCoordinator?.start()
         window.makeKeyAndVisible()
     }
 }
