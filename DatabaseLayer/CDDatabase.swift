@@ -25,6 +25,12 @@ public final class CDDatabase {
     // MARK: - Lifecycle
     public init(containerName: String = "Model") {
         persistentContainer = NSPersistentContainer(name: containerName)
+        self.persistentContainer.viewContext.automaticallyMergesChangesFromParent = true
+        self.persistentContainer.viewContext.mergePolicy = NSMergePolicy.overwrite
+        let description = NSPersistentStoreDescription()
+        description.shouldMigrateStoreAutomatically = true
+        description.shouldInferMappingModelAutomatically = true
+        self.persistentContainer.persistentStoreDescriptions.append(description)
         persistentContainer.loadPersistentStores { _, error in
             guard let error = error as NSError? else { return }
             fatalError("LoadPersistentStores: Unresolved error \(error), \(error.userInfo)")

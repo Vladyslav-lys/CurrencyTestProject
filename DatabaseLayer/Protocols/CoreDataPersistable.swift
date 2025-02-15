@@ -17,10 +17,6 @@ protocol CoreDataPersistable {
 }
 
 extension CoreDataPersistable {
-    func findPredicate() -> NSPredicate {
-        NSPredicate(format: "%K == %@", argumentArray: [ManagedObject.primaryKey, primaryKeyValue])
-    }
-    
     func update(_ object: ManagedObject) throws {
         try update(object)
     }
