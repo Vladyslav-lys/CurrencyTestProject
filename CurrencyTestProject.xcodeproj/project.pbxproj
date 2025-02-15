@@ -30,7 +30,6 @@
 		273E0E4E2D5F4E810044F798 /* DatabaseLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273E0E482D5F4E810044F798 /* DatabaseLayer.framework */; };
 		273E0E4F2D5F4E810044F798 /* DatabaseLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273E0E482D5F4E810044F798 /* DatabaseLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		273E0E5B2D5F801E0044F798 /* CoreDataPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E5A2D5F801E0044F798 /* CoreDataPersistable.swift */; };
-		273E0E5D2D5F80400044F798 /* PrimaryKeyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E5C2D5F80400044F798 /* PrimaryKeyProvider.swift */; };
 		273E0E612D5F81A60044F798 /* NSManagedObjectContext+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E602D5F81A60044F798 /* NSManagedObjectContext+Operations.swift */; };
 		273E0E642D5F835D0044F798 /* DatabaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E632D5F835D0044F798 /* DatabaseError.swift */; };
 		273E0E662D5F8AC50044F798 /* CDDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E652D5F8AC50044F798 /* CDDatabase.swift */; };
@@ -107,7 +106,6 @@
 		273E0E482D5F4E810044F798 /* DatabaseLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DatabaseLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		273E0E4A2D5F4E810044F798 /* DatabaseLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseLayer.h; sourceTree = "<group>"; };
 		273E0E5A2D5F801E0044F798 /* CoreDataPersistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPersistable.swift; sourceTree = "<group>"; };
-		273E0E5C2D5F80400044F798 /* PrimaryKeyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryKeyProvider.swift; sourceTree = "<group>"; };
 		273E0E602D5F81A60044F798 /* NSManagedObjectContext+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Operations.swift"; sourceTree = "<group>"; };
 		273E0E632D5F835D0044F798 /* DatabaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseError.swift; sourceTree = "<group>"; };
 		273E0E652D5F8AC50044F798 /* CDDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDDatabase.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				273E0E5A2D5F801E0044F798 /* CoreDataPersistable.swift */,
-				273E0E5C2D5F80400044F798 /* PrimaryKeyProvider.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -578,7 +575,6 @@
 			files = (
 				273E0E642D5F835D0044F798 /* DatabaseError.swift in Sources */,
 				273E0E5B2D5F801E0044F798 /* CoreDataPersistable.swift in Sources */,
-				273E0E5D2D5F80400044F798 /* PrimaryKeyProvider.swift in Sources */,
 				273E0E612D5F81A60044F798 /* NSManagedObjectContext+Operations.swift in Sources */,
 				273E0E662D5F8AC50044F798 /* CDDatabase.swift in Sources */,
 			);
