@@ -9,8 +9,8 @@ import DatabaseLayer
 import NetworkLayer
 
 public final class ServiceContext {
-    public let network: Network
-    public let database: CDDatabase
+    let network: Network
+    let database: CDDatabase
 
     public init(network: Network, database: CDDatabase) {
         self.network = network

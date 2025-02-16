@@ -83,7 +83,7 @@ extension CDDatabase {
 
 // MARK: - Fetch
 extension CDDatabase {
-    func fetchAll<T: NSManagedObject>(
+    public func fetchAll<T: NSManagedObject>(
         predicate: NSPredicate? = nil,
         sortDescriptors: [NSSortDescriptor]? = nil,
         in context: Context = .background
@@ -96,20 +96,20 @@ extension CDDatabase {
 
 // MARK: - Save
 extension CDDatabase {
-    func save<T: CoreDataPersistable>(_ value: T, in context: Context = .background) async throws -> T {
+    public func save<T: CoreDataPersistable>(_ value: T, in context: Context = .background) async throws -> T {
         try await perform(in: managedObjectContext(for: context)) { context in
             let object = T.ManagedObject(entity: T.ManagedObject.entity(), insertInto: context)
-            try value.update(object, context: context)
+            try value.update(object)
             try context.saveIfNeeded()
             return value
         }
     }
     
-    func save<T: CoreDataPersistable>(_ values: [T], in context: Context = .background) async throws -> [T.ManagedObject] {
+    public func save<T: CoreDataPersistable>(_ values: [T], in context: Context = .background) async throws -> [T.ManagedObject] {
         try await perform(in: managedObjectContext(for: context)) { context in
             let objects = try values.map { value -> T.ManagedObject in
                 let object = T.ManagedObject(entity: T.ManagedObject.entity(), insertInto: context)
-                try value.update(object, context: context)
+                try value.update(object)
                 return object
             }
             try context.saveIfNeeded()
@@ -120,29 +120,40 @@ extension CDDatabase {
 
 // MARK: - Update
 extension CDDatabase {
-    func update<T: CoreDataPersistable>(
-        _ object: T,
-        in context: Context = .background,
-        update: @escaping ((T, T.ManagedObject)) throws -> Void
-    ) async throws {
+    public func update<T: CoreDataPersistable>(_ object: T, in context: Context = .background) async throws -> T {
         try await perform(in: managedObjectContext(for: context)) {
-            try update((object, T.ManagedObject(entity: T.ManagedObject.entity(), insertInto: $0)))
+            let entity = try $0.fetchOrCreate(for: object)
+            try object.update(entity)
             try $0.saveIfNeeded()
+            return object
         }
     }
     
-    func update<T: CoreDataPersistable>(
-        _ values: [T],
-        in context: Context = .background,
-        update: @escaping ((T, T.ManagedObject)) throws -> Void
-    ) async throws {
+    public func update<T: CoreDataPersistable>( _ values: [T], in context: Context = .background) async throws -> [T] {
         try await perform(in: managedObjectContext(for: context)) { context in
-            try values.forEach { value in
-                let object = T.ManagedObject(entity: T.ManagedObject.entity(), insertInto: context)
-                try value.update(object, context: context)
-                try update((value, object))
+            try values.forEach { object in
+                let entity = try context.fetchOrCreate(for: object)
+                try object.update(entity)
             }
             try context.saveIfNeeded()
+            return values
         }
+    }
+}
+
+// MARK: - Remove
+public extension CDDatabase {
+    func removeAll<T: NSManagedObject>(
+        predicate: NSPredicate? = nil,
+        sortDescriptors: [NSSortDescriptor]? = nil,
+        in context: Context = .background
+    ) async throws -> [T] {
+        let managedContext = managedObjectContext(for: context)
+        let objects: [T] = try await fetchAll(predicate: predicate,sortDescriptors: sortDescriptors, in: context)
+        objects.forEach {
+            managedContext.delete($0)
+        }
+        try managedContext.saveIfNeeded()
+        return objects
     }
 }

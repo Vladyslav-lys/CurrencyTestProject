@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Private Properties
     private lazy var platform = Platform()
-    private lazy var appCoordinator = AppCoordinator()
+    private lazy var appCoordinator = AppCoordinator(useCases: platform)
     
     // MARK: - Methods
     func application(_ application: UIApplication,

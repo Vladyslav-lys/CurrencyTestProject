@@ -14,7 +14,7 @@ protocol RatesFactoryProtocol: AnyObject {
 final class RatesFactory: BaseFactory, RatesFactoryProtocol {
     func makeRatesVC() -> RatesVC {
         makeController {
-            $0.viewModel = RatesVM()
+            $0.viewModel = RatesVM(useCases: useCases)
         }
     }
 }

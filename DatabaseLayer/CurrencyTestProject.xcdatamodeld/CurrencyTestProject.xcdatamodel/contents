@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23G93" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDExchangeRate" representedClassName="CDExchangeRate" syncable="YES">
+        <attribute name="baseCurrency" attributeType="String" defaultValueString=""/>
+        <attribute name="date" attributeType="Date" defaultDateTimeInterval="761342040" usesScalarValueType="NO"/>
+        <attribute name="isFavorite" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="quote" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="quoteCurrency" attributeType="String" defaultValueString=""/>
+    </entity>
 </model>

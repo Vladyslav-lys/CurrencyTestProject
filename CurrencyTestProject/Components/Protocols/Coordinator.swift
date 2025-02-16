@@ -8,6 +8,8 @@
 import Foundation
 
 protocol Coordinator: AnyObject {
+    var useCases: UseCasesProvider { get }
+    
     func start(animated: Bool)
     func stop(animated: Bool)
 }

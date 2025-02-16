@@ -8,12 +8,16 @@
 import UIKit
 
 final class RatesCoordinator: Coordinator {
+    // MARK: - Public Properties
+    let useCases: UseCasesProvider
+    
     // MARK: - Private properties
     private lazy var factory: RatesFactoryProtocol = RatesFactory(coordinator: self)
     private unowned var presenter: UINavigationController
     
     // MARK: - Lifecycle
-    init(presenter: UINavigationController) {
+    init(presenter: UINavigationController, useCases: UseCasesProvider) {
+        self.useCases = useCases
         self.presenter = presenter
     }
     

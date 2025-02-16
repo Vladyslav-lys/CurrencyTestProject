@@ -16,4 +16,16 @@ class BaseVM {
         subscriptions.forEach { $0.cancel() }
         subscriptions.removeAll()
     }
+    
+    func perform(completion: @escaping () async throws -> Void) {
+        Task { @MainActor in
+            do {
+                isLoading = true
+                try await completion()
+            } catch {
+                self.error = error
+            }
+            isLoading = false
+        }
+    }
 }

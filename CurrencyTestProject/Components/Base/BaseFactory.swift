@@ -9,9 +9,11 @@ import UIKit
 
 class BaseFactory {
     private(set) weak var coordinator: Coordinator?
+    var useCases: UseCasesProvider
     
     init(coordinator: Coordinator) {
         self.coordinator = coordinator
+        useCases = coordinator.useCases
     }
 }
 

@@ -18,10 +18,8 @@ final public class Network {
     private let interceptorProvider: InterceptorProvider
     private let networkTransport: NetworkTransport
     
-    // MARK: - Internal properties
-    let apollo: ApolloClient
-    
     // MARK: - Public properties
+    public let apollo: ApolloClient
     public var isConnected = CurrentValueSubject<Bool, Never>(false)
     
     // MARK: - Initialize

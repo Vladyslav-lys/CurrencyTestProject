@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273C99BB2D6147B100B9D88D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 273C99BA2D6147B100B9D88D /* Apollo */; };
+		273C99BE2D6147C700B9D88D /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 273C99BD2D6147C700B9D88D /* RswiftLibrary */; };
+		273C99C72D6149D200B9D88D /* RatesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 273C99C62D6149D200B9D88D /* RatesAPI */; };
+		273C99CD2D61EF0A00B9D88D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99CC2D61EF0A00B9D88D /* Date+Extensions.swift */; };
+		273C99D02D61F08D00B9D88D /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99CF2D61F08D00B9D88D /* TimeZone+Extensions.swift */; };
+		273C99D52D61F68500B9D88D /* UICollectionView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99D42D61F68500B9D88D /* UICollectionView+Helpers.swift */; };
+		273C99DB2D61F6EC00B9D88D /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99DA2D61F6EC00B9D88D /* With.swift */; };
+		273C99E12D61F91700B9D88D /* RateCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99E02D61F91700B9D88D /* RateCVC.swift */; };
+		273C99E42D62034A00B9D88D /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99E32D62034A00B9D88D /* CollectionAdapter.swift */; };
+		273C99F82D6230DB00B9D88D /* RatesVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99F72D6230DB00B9D88D /* RatesVC+Layout.swift */; };
 		273E0DBB2D5CFFA90044F798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DBA2D5CFFA90044F798 /* AppDelegate.swift */; };
 		273E0DBF2D5CFFA90044F798 /* RatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DBE2D5CFFA90044F798 /* RatesVC.swift */; };
 		273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DC32D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld */; };
@@ -16,10 +26,7 @@
 		273E0DE12D5E303B0044F798 /* NetworkLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 273E0DE02D5E303B0044F798 /* NetworkLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		273E0DE42D5E303B0044F798 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273E0DDE2D5E303A0044F798 /* NetworkLayer.framework */; };
 		273E0DE52D5E303B0044F798 /* NetworkLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273E0DDE2D5E303A0044F798 /* NetworkLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		273E0DFB2D5E4D380044F798 /* RswiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 273E0DFA2D5E4D380044F798 /* RswiftLibrary */; };
 		273E0DFD2D5E50200044F798 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 273E0DFC2D5E50200044F798 /* schema.graphqls */; };
-		273E0E102D5E59330044F798 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 273E0E0F2D5E59330044F798 /* Apollo */; };
-		273E0E142D5E5FDB0044F798 /* RatesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 273E0E132D5E5FDB0044F798 /* RatesAPI */; };
 		273E0E162D5E66730044F798 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E152D5E66730044F798 /* Network.swift */; };
 		273E0E1F2D5E6C3A0044F798 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E1E2D5E6C390044F798 /* NetworkError.swift */; };
 		273E0E292D5E79E80044F798 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0E282D5E79E80044F798 /* APIError.swift */; };
@@ -52,6 +59,15 @@
 		274E86042D6113B9004BA885 /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86032D6113B9004BA885 /* BaseVM.swift */; };
 		274E86062D6113E2004BA885 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86052D6113E2004BA885 /* BaseVC.swift */; };
 		274E860A2D611504004BA885 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86092D611504004BA885 /* ActivityView.swift */; };
+		274E86252D612DF4004BA885 /* RatesUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86232D612DF4004BA885 /* RatesUseCases.swift */; };
+		274E86282D612DFC004BA885 /* RatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86262D612DFC004BA885 /* RatesService.swift */; };
+		274E862D2D612E3D004BA885 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E862B2D612E3D004BA885 /* Rate.swift */; };
+		274E86302D6130A0004BA885 /* Rate+InitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E862E2D6130A0004BA885 /* Rate+InitResponse.swift */; };
+		274E86362D613277004BA885 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86342D613277004BA885 /* DateFormatter+Extensions.swift */; };
+		274E86392D613404004BA885 /* CDExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86372D613404004BA885 /* CDExchangeRate.swift */; };
+		274E863F2D6135C0004BA885 /* Rate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E863D2D6135C0004BA885 /* Rate+CoreData.swift */; };
+		274E86412D613C08004BA885 /* UseCasesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86402D613C08004BA885 /* UseCasesProvider.swift */; };
+		274E86442D613E14004BA885 /* UseCasesConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274E86432D613E14004BA885 /* UseCasesConsumer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +111,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		273C99CC2D61EF0A00B9D88D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		273C99CF2D61F08D00B9D88D /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
+		273C99D42D61F68500B9D88D /* UICollectionView+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helpers.swift"; sourceTree = "<group>"; };
+		273C99DA2D61F6EC00B9D88D /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
+		273C99E02D61F91700B9D88D /* RateCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCVC.swift; sourceTree = "<group>"; };
+		273C99E32D62034A00B9D88D /* CollectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
+		273C99F72D6230DB00B9D88D /* RatesVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RatesVC+Layout.swift"; sourceTree = "<group>"; };
 		273E0DB72D5CFFA90044F798 /* CurrencyTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		273E0DBA2D5CFFA90044F798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273E0DBE2D5CFFA90044F798 /* RatesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesVC.swift; sourceTree = "<group>"; };
@@ -138,6 +161,15 @@
 		274E86032D6113B9004BA885 /* BaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
 		274E86052D6113E2004BA885 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		274E86092D611504004BA885 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		274E86232D612DF4004BA885 /* RatesUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesUseCases.swift; sourceTree = "<group>"; };
+		274E86262D612DFC004BA885 /* RatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesService.swift; sourceTree = "<group>"; };
+		274E862B2D612E3D004BA885 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		274E862E2D6130A0004BA885 /* Rate+InitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rate+InitResponse.swift"; sourceTree = "<group>"; };
+		274E86342D613277004BA885 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		274E86372D613404004BA885 /* CDExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDExchangeRate.swift; sourceTree = "<group>"; };
+		274E863D2D6135C0004BA885 /* Rate+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rate+CoreData.swift"; sourceTree = "<group>"; };
+		274E86402D613C08004BA885 /* UseCasesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesProvider.swift; sourceTree = "<group>"; };
+		274E86432D613E14004BA885 /* UseCasesConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesConsumer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,9 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				273E0DE42D5E303B0044F798 /* NetworkLayer.framework in Frameworks */,
+				273C99BE2D6147C700B9D88D /* RswiftLibrary in Frameworks */,
 				273E0E4E2D5F4E810044F798 /* DatabaseLayer.framework in Frameworks */,
 				273E0E892D5FA9030044F798 /* Services.framework in Frameworks */,
-				273E0DFB2D5E4D380044F798 /* RswiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,8 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273E0E102D5E59330044F798 /* Apollo in Frameworks */,
-				273E0E142D5E5FDB0044F798 /* RatesAPI in Frameworks */,
+				273C99BB2D6147B100B9D88D /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +203,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273C99C72D6149D200B9D88D /* RatesAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		273C99CB2D61EEFC00B9D88D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				273C99CC2D61EF0A00B9D88D /* Date+Extensions.swift */,
+				273C99CF2D61F08D00B9D88D /* TimeZone+Extensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		273C99D32D61F67700B9D88D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				273C99E52D620D0800B9D88D /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		273C99D72D61F6D800B9D88D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				273C99DA2D61F6EC00B9D88D /* With.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		273C99DC2D61F87E00B9D88D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				273C99E02D61F91700B9D88D /* RateCVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		273C99E22D62033E00B9D88D /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				273C99E32D62034A00B9D88D /* CollectionAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		273C99E52D620D0800B9D88D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				273C99D42D61F68500B9D88D /* UICollectionView+Helpers.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		273C99F62D6230CC00B9D88D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				273C99F72D6230DB00B9D88D /* RatesVC+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		273E0DAE2D5CFFA90044F798 = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +354,7 @@
 		273E0E492D5F4E810044F798 /* DatabaseLayer */ = {
 			isa = PBXGroup;
 			children = (
+				274E860D2D6122FE004BA885 /* Entities */,
 				273E0E622D5F83500044F798 /* Errors */,
 				273E0E552D5F7FC60044F798 /* Extensions */,
 				273E0E532D5F7FB00044F798 /* Protocols */,
@@ -330,6 +420,8 @@
 		273E0E842D5FA9030044F798 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				274E86292D612E26004BA885 /* Entities */,
+				274E86222D612942004BA885 /* Rates */,
 				273E0E962D5FABF50044F798 /* Components */,
 				273E0E912D5FA9BA0044F798 /* Base */,
 				273E0E852D5FA9030044F798 /* Services.h */,
@@ -349,6 +441,7 @@
 		273E0E962D5FABF50044F798 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				274E86312D613251004BA885 /* Extensions */,
 				273E0E982D5FABFC0044F798 /* Error */,
 			);
 			path = Components;
@@ -384,6 +477,9 @@
 		274E85F02D610C5B004BA885 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				273C99E22D62033E00B9D88D /* Adapters */,
+				273C99D72D61F6D800B9D88D /* Utils */,
+				273C99D32D61F67700B9D88D /* Extensions */,
 				274E85F52D610C84004BA885 /* Protocols */,
 				274E85F12D610C69004BA885 /* Base */,
 			);
@@ -405,6 +501,8 @@
 			children = (
 				274E85F62D610CAD004BA885 /* Makeable.swift */,
 				274E86012D611366004BA885 /* ViewModelContainer.swift */,
+				274E86402D613C08004BA885 /* UseCasesProvider.swift */,
+				274E86432D613E14004BA885 /* UseCasesConsumer.swift */,
 				274E85F82D610D6A004BA885 /* Coordinator.swift */,
 			);
 			path = Protocols;
@@ -413,6 +511,8 @@
 		274E85FA2D611163004BA885 /* Rates */ = {
 			isa = PBXGroup;
 			children = (
+				273C99F62D6230CC00B9D88D /* Extensions */,
+				273C99DC2D61F87E00B9D88D /* Cells */,
 				273E0DBE2D5CFFA90044F798 /* RatesVC.swift */,
 				274E85FB2D611175004BA885 /* RatesVM.swift */,
 			);
@@ -425,6 +525,58 @@
 				274E86092D611504004BA885 /* ActivityView.swift */,
 			);
 			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		274E860D2D6122FE004BA885 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				274E86372D613404004BA885 /* CDExchangeRate.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		274E86222D612942004BA885 /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				274E86232D612DF4004BA885 /* RatesUseCases.swift */,
+				274E86262D612DFC004BA885 /* RatesService.swift */,
+			);
+			path = Rates;
+			sourceTree = "<group>";
+		};
+		274E86292D612E26004BA885 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				274E862A2D612E2C004BA885 /* Rate */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		274E862A2D612E2C004BA885 /* Rate */ = {
+			isa = PBXGroup;
+			children = (
+				274E862B2D612E3D004BA885 /* Rate.swift */,
+				274E862E2D6130A0004BA885 /* Rate+InitResponse.swift */,
+				274E863D2D6135C0004BA885 /* Rate+CoreData.swift */,
+			);
+			path = Rate;
+			sourceTree = "<group>";
+		};
+		274E86312D613251004BA885 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				273C99CB2D61EEFC00B9D88D /* Foundation */,
+				274E86332D613265004BA885 /* Formatters */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		274E86332D613265004BA885 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				274E86342D613277004BA885 /* DateFormatter+Extensions.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,7 +628,7 @@
 			);
 			name = CurrencyTestProject;
 			packageProductDependencies = (
-				273E0DFA2D5E4D380044F798 /* RswiftLibrary */,
+				273C99BD2D6147C700B9D88D /* RswiftLibrary */,
 			);
 			productName = CurrencyTestProject;
 			productReference = 273E0DB72D5CFFA90044F798 /* CurrencyTestProject.app */;
@@ -497,8 +649,7 @@
 			);
 			name = NetworkLayer;
 			packageProductDependencies = (
-				273E0E0F2D5E59330044F798 /* Apollo */,
-				273E0E132D5E5FDB0044F798 /* RatesAPI */,
+				273C99BA2D6147B100B9D88D /* Apollo */,
 			);
 			productName = NetworkLayer;
 			productReference = 273E0DDE2D5E303A0044F798 /* NetworkLayer.framework */;
@@ -536,6 +687,9 @@
 			dependencies = (
 			);
 			name = Services;
+			packageProductDependencies = (
+				273C99C62D6149D200B9D88D /* RatesAPI */,
+			);
 			productName = Services;
 			productReference = 273E0E832D5FA9030044F798 /* Services.framework */;
 			productType = "com.apple.product-type.framework";
@@ -577,9 +731,9 @@
 			);
 			mainGroup = 273E0DAE2D5CFFA90044F798;
 			packageReferences = (
-				273E0DF92D5E4D380044F798 /* XCRemoteSwiftPackageReference "R" */,
-				273E0E0E2D5E59330044F798 /* XCRemoteSwiftPackageReference "apollo-ios" */,
-				273E0E122D5E5FDB0044F798 /* XCLocalSwiftPackageReference "NetworkLayer/RatesAPI" */,
+				273C99B92D6147B100B9D88D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				273C99BC2D6147C700B9D88D /* XCRemoteSwiftPackageReference "R" */,
+				273C99C52D6149D200B9D88D /* XCLocalSwiftPackageReference "Services/API/RatesAPI" */,
 			);
 			productRefGroup = 273E0DB82D5CFFA90044F798 /* Products */;
 			projectDirPath = "";
@@ -634,16 +788,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				273E0E9C2D5FAE280044F798 /* Platform.swift in Sources */,
+				273C99D52D61F68500B9D88D /* UICollectionView+Helpers.swift in Sources */,
+				273C99E12D61F91700B9D88D /* RateCVC.swift in Sources */,
 				273E0DD82D5E2E6A0044F798 /* AppCoordinator.swift in Sources */,
 				274E86022D611366004BA885 /* ViewModelContainer.swift in Sources */,
+				273C99E42D62034A00B9D88D /* CollectionAdapter.swift in Sources */,
+				274E86442D613E14004BA885 /* UseCasesConsumer.swift in Sources */,
+				273C99DB2D61F6EC00B9D88D /* With.swift in Sources */,
 				274E85FE2D6111A8004BA885 /* RatesFactory.swift in Sources */,
 				274E86062D6113E2004BA885 /* BaseVC.swift in Sources */,
+				274E86412D613C08004BA885 /* UseCasesProvider.swift in Sources */,
 				274E860A2D611504004BA885 /* ActivityView.swift in Sources */,
 				273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */,
 				274E85FC2D611175004BA885 /* RatesVM.swift in Sources */,
 				274E85F72D610CAD004BA885 /* Makeable.swift in Sources */,
 				273E0DBF2D5CFFA90044F798 /* RatesVC.swift in Sources */,
 				274E86002D6111B7004BA885 /* RatesCoordinator.swift in Sources */,
+				273C99F82D6230DB00B9D88D /* RatesVC+Layout.swift in Sources */,
 				273E0DBB2D5CFFA90044F798 /* AppDelegate.swift in Sources */,
 				273E0E772D5FA0E20044F798 /* Environment.swift in Sources */,
 				274E85F32D610C72004BA885 /* BaseFactory.swift in Sources */,
@@ -671,6 +832,7 @@
 			files = (
 				273E0E642D5F835D0044F798 /* DatabaseError.swift in Sources */,
 				273E0E5B2D5F801E0044F798 /* CoreDataPersistable.swift in Sources */,
+				274E86392D613404004BA885 /* CDExchangeRate.swift in Sources */,
 				273E0E612D5F81A60044F798 /* NSManagedObjectContext+Operations.swift in Sources */,
 				273E0E662D5F8AC50044F798 /* CDDatabase.swift in Sources */,
 			);
@@ -681,8 +843,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				273E0E9A2D5FAC250044F798 /* ServiceError.swift in Sources */,
+				273C99CD2D61EF0A00B9D88D /* Date+Extensions.swift in Sources */,
+				273C99D02D61F08D00B9D88D /* TimeZone+Extensions.swift in Sources */,
 				273E0E932D5FA9C80044F798 /* BaseService.swift in Sources */,
+				274E86252D612DF4004BA885 /* RatesUseCases.swift in Sources */,
+				274E862D2D612E3D004BA885 /* Rate.swift in Sources */,
+				274E863F2D6135C0004BA885 /* Rate+CoreData.swift in Sources */,
+				274E86302D6130A0004BA885 /* Rate+InitResponse.swift in Sources */,
+				274E86282D612DFC004BA885 /* RatesService.swift in Sources */,
 				273E0E902D5FA9180044F798 /* ServiceContext.swift in Sources */,
+				274E86362D613277004BA885 /* DateFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1005,7 +1175,7 @@
 		273E0E512D5F4E810044F798 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1018,7 +1188,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1030,11 +1200,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslav.DatabaseLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1043,7 +1217,7 @@
 		273E0E522D5F4E810044F798 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1056,7 +1230,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1068,10 +1242,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslav.DatabaseLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1080,7 +1258,7 @@
 		273E0E8C2D5FA9030044F798 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1093,7 +1271,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1105,11 +1283,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslav.Services;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1118,7 +1300,7 @@
 		273E0E8D2D5FA9030044F798 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1131,7 +1313,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1143,10 +1325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslav.Services;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1203,13 +1389,29 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		273E0E122D5E5FDB0044F798 /* XCLocalSwiftPackageReference "NetworkLayer/RatesAPI" */ = {
+		273C99C52D6149D200B9D88D /* XCLocalSwiftPackageReference "Services/API/RatesAPI" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = NetworkLayer/RatesAPI;
+			relativePath = Services/API/RatesAPI;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		273C99B92D6147B100B9D88D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.17.0;
+			};
+		};
+		273C99BC2D6147C700B9D88D /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.0;
+			};
+		};
 		273E0DF92D5E4D380044F798 /* XCRemoteSwiftPackageReference "R" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mac-cain13/R.swift";
@@ -1218,28 +1420,20 @@
 				minimumVersion = 7.8.0;
 			};
 		};
-		273E0E0E2D5E59330044F798 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apollographql/apollo-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.17.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		273E0DFA2D5E4D380044F798 /* RswiftLibrary */ = {
+		273C99BA2D6147B100B9D88D /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 273E0DF92D5E4D380044F798 /* XCRemoteSwiftPackageReference "R" */;
-			productName = RswiftLibrary;
-		};
-		273E0E0F2D5E59330044F798 /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 273E0E0E2D5E59330044F798 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			package = 273C99B92D6147B100B9D88D /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
 		};
-		273E0E132D5E5FDB0044F798 /* RatesAPI */ = {
+		273C99BD2D6147C700B9D88D /* RswiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 273C99BC2D6147C700B9D88D /* XCRemoteSwiftPackageReference "R" */;
+			productName = RswiftLibrary;
+		};
+		273C99C62D6149D200B9D88D /* RatesAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RatesAPI;
 		};

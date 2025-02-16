@@ -8,7 +8,7 @@
 import DatabaseLayer
 import NetworkLayer
 
-class BaseService {
+public class BaseService {
     func perform<T>(completion: @escaping () async throws -> T) async throws -> T {
         do {
             return try await completion()

@@ -7,16 +7,21 @@
 
 import CoreData
 
-typealias Context = NSManagedObjectContext
+public typealias Context = NSManagedObjectContext
 
-protocol CoreDataPersistable {
+public protocol CoreDataPersistable {
     associatedtype ManagedObject: NSManagedObject
+    var primaryKeyValues: [String: Any] { get }
     
-    func update(_ object: ManagedObject, context: Context) throws
+    func update(_ object: ManagedObject) throws
 }
 
 extension CoreDataPersistable {
-    func update(_ object: ManagedObject) throws {
-        try update(object)
+    func findPredicate() -> NSPredicate {
+        var predicates: [NSPredicate] = []
+        primaryKeyValues.forEach { key, value in
+            predicates.append(NSPredicate(format: "%K == %@", argumentArray: [key, value]))
+        }
+        return NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
     }
 }
