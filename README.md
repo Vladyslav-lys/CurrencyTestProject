@@ -14,7 +14,7 @@ The purpose of the application is to monitor the current exchange rate and highl
 ### Technical description
 
 #### How to build and run an app
-Open the project in Xcode by double-clicking on the CurrencyTestProject.xcodeproj file in the project folder. Next, select the simulator you need and click the ▶️ button in the upper left corner. The project will build itself by default and open the simulator with the running application.
+Open the project in Xcode by double-clicking on the CurrencyTestProject.xcodeproj file in the project folder. Next, select the simulator you need and click the Run▶️ button in the upper left corner. The project will build itself by default and open the simulator with the running application.
 
 #### App architecture and design choices
 The application follows the MVVM architecture ensuring a separation of concerns and improved testability.
