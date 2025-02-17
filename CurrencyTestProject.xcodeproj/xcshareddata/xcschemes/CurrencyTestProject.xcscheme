@@ -15,37 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "273E0E472D5F4E810044F798"
-               BuildableName = "DatabaseLayer.framework"
-               BlueprintName = "DatabaseLayer"
-               ReferencedContainer = "container:CurrencyTestProject.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "273E0DDD2D5E303A0044F798"
-               BuildableName = "NetworkLayer.framework"
-               BlueprintName = "NetworkLayer"
-               ReferencedContainer = "container:CurrencyTestProject.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "273E0E822D5FA9030044F798"
-               BuildableName = "Services.framework"
-               BlueprintName = "Services"
+               BlueprintIdentifier = "273E0DB62D5CFFA90044F798"
+               BuildableName = "CurrencyTestProject.app"
+               BlueprintName = "CurrencyTestProject"
                ReferencedContainer = "container:CurrencyTestProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -68,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "273E0DB62D5CFFA90044F798"
+            BuildableName = "CurrencyTestProject.app"
+            BlueprintName = "CurrencyTestProject"
+            ReferencedContainer = "container:CurrencyTestProject.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -75,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "273E0E822D5FA9030044F798"
-            BuildableName = "Services.framework"
-            BlueprintName = "Services"
+            BlueprintIdentifier = "273E0DB62D5CFFA90044F798"
+            BuildableName = "CurrencyTestProject.app"
+            BlueprintName = "CurrencyTestProject"
             ReferencedContainer = "container:CurrencyTestProject.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

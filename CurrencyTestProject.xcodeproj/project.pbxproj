@@ -73,19 +73,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		273E0DE22D5E303B0044F798 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273E0DAF2D5CFFA90044F798 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 273E0DDD2D5E303A0044F798;
-			remoteInfo = NetworkLayer;
-		};
-		273E0E4C2D5F4E810044F798 /* PBXContainerItemProxy */ = {
+		273C9A092D635C2700B9D88D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 273E0DAF2D5CFFA90044F798 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 273E0E472D5F4E810044F798;
 			remoteInfo = DatabaseLayer;
+		};
+		273C9A0B2D635C2D00B9D88D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273E0DAF2D5CFFA90044F798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273E0DDD2D5E303A0044F798;
+			remoteInfo = NetworkLayer;
 		};
 		273E0E872D5FA9030044F798 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -627,8 +627,6 @@
 			);
 			dependencies = (
 				273E0E682D5F9DB00044F798 /* PBXTargetDependency */,
-				273E0DE32D5E303B0044F798 /* PBXTargetDependency */,
-				273E0E4D2D5F4E810044F798 /* PBXTargetDependency */,
 				273E0E882D5FA9030044F798 /* PBXTargetDependency */,
 			);
 			name = CurrencyTestProject;
@@ -690,6 +688,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				273C9A0C2D635C2D00B9D88D /* PBXTargetDependency */,
+				273C9A0A2D635C2700B9D88D /* PBXTargetDependency */,
 			);
 			name = Services;
 			packageProductDependencies = (
@@ -866,15 +866,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		273E0DE32D5E303B0044F798 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 273E0DDD2D5E303A0044F798 /* NetworkLayer */;
-			targetProxy = 273E0DE22D5E303B0044F798 /* PBXContainerItemProxy */;
-		};
-		273E0E4D2D5F4E810044F798 /* PBXTargetDependency */ = {
+		273C9A0A2D635C2700B9D88D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 273E0E472D5F4E810044F798 /* DatabaseLayer */;
-			targetProxy = 273E0E4C2D5F4E810044F798 /* PBXContainerItemProxy */;
+			targetProxy = 273C9A092D635C2700B9D88D /* PBXContainerItemProxy */;
+		};
+		273C9A0C2D635C2D00B9D88D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273E0DDD2D5E303A0044F798 /* NetworkLayer */;
+			targetProxy = 273C9A0B2D635C2D00B9D88D /* PBXContainerItemProxy */;
 		};
 		273E0E682D5F9DB00044F798 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
