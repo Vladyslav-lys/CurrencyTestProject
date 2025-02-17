@@ -17,6 +17,8 @@
 		273C99E12D61F91700B9D88D /* RateCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99E02D61F91700B9D88D /* RateCVC.swift */; };
 		273C99E42D62034A00B9D88D /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99E32D62034A00B9D88D /* CollectionAdapter.swift */; };
 		273C99F82D6230DB00B9D88D /* RatesVC+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99F72D6230DB00B9D88D /* RatesVC+Layout.swift */; };
+		273C99FD2D62AD5700B9D88D /* RatesAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 273C99FC2D62AD5700B9D88D /* RatesAPI */; };
+		273C9A002D63318000B9D88D /* NSDiffableDataSourceSnapshot+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C99FF2D63318000B9D88D /* NSDiffableDataSourceSnapshot+Helpers.swift */; };
 		273E0DBB2D5CFFA90044F798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DBA2D5CFFA90044F798 /* AppDelegate.swift */; };
 		273E0DBF2D5CFFA90044F798 /* RatesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DBE2D5CFFA90044F798 /* RatesVC.swift */; };
 		273E0DC52D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 273E0DC32D5CFFA90044F798 /* CurrencyTestProject.xcdatamodeld */; };
@@ -118,6 +120,7 @@
 		273C99E02D61F91700B9D88D /* RateCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCVC.swift; sourceTree = "<group>"; };
 		273C99E32D62034A00B9D88D /* CollectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
 		273C99F72D6230DB00B9D88D /* RatesVC+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RatesVC+Layout.swift"; sourceTree = "<group>"; };
+		273C99FF2D63318000B9D88D /* NSDiffableDataSourceSnapshot+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDiffableDataSourceSnapshot+Helpers.swift"; sourceTree = "<group>"; };
 		273E0DB72D5CFFA90044F798 /* CurrencyTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		273E0DBA2D5CFFA90044F798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273E0DBE2D5CFFA90044F798 /* RatesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesVC.swift; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				273C99C72D6149D200B9D88D /* RatesAPI in Frameworks */,
+				273C99FD2D62AD5700B9D88D /* RatesAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				273C99D42D61F68500B9D88D /* UICollectionView+Helpers.swift */,
+				273C99FF2D63318000B9D88D /* NSDiffableDataSourceSnapshot+Helpers.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -689,6 +694,7 @@
 			name = Services;
 			packageProductDependencies = (
 				273C99C62D6149D200B9D88D /* RatesAPI */,
+				273C99FC2D62AD5700B9D88D /* RatesAPI */,
 			);
 			productName = Services;
 			productReference = 273E0E832D5FA9030044F798 /* Services.framework */;
@@ -733,7 +739,7 @@
 			packageReferences = (
 				273C99B92D6147B100B9D88D /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				273C99BC2D6147C700B9D88D /* XCRemoteSwiftPackageReference "R" */,
-				273C99C52D6149D200B9D88D /* XCLocalSwiftPackageReference "Services/API/RatesAPI" */,
+				273C99FB2D62AD5600B9D88D /* XCLocalSwiftPackageReference "Services/API/RatesAPI" */,
 			);
 			productRefGroup = 273E0DB82D5CFFA90044F798 /* Products */;
 			projectDirPath = "";
@@ -807,6 +813,7 @@
 				273C99F82D6230DB00B9D88D /* RatesVC+Layout.swift in Sources */,
 				273E0DBB2D5CFFA90044F798 /* AppDelegate.swift in Sources */,
 				273E0E772D5FA0E20044F798 /* Environment.swift in Sources */,
+				273C9A002D63318000B9D88D /* NSDiffableDataSourceSnapshot+Helpers.swift in Sources */,
 				274E85F32D610C72004BA885 /* BaseFactory.swift in Sources */,
 				274E85F92D610D6A004BA885 /* Coordinator.swift in Sources */,
 				274E86042D6113B9004BA885 /* BaseVM.swift in Sources */,
@@ -1389,7 +1396,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		273C99C52D6149D200B9D88D /* XCLocalSwiftPackageReference "Services/API/RatesAPI" */ = {
+		273C99FB2D62AD5600B9D88D /* XCLocalSwiftPackageReference "Services/API/RatesAPI" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Services/API/RatesAPI;
 		};
@@ -1434,6 +1441,10 @@
 			productName = RswiftLibrary;
 		};
 		273C99C62D6149D200B9D88D /* RatesAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RatesAPI;
+		};
+		273C99FC2D62AD5700B9D88D /* RatesAPI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RatesAPI;
 		};

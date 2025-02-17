@@ -25,7 +25,13 @@ final class RatesVM: BaseVM, UseCasesConsumer {
     func getLatestRates() {
         perform { [weak self] in
             guard let self else { return }
-            self.latestRates = try await self.useCases.rates.getLatesRates()
+            latestRates = try await useCases.rates.getLatesRates()
+        }
+    }
+    
+    func updateRate(rate: Rate) {
+        perform { [weak self] in
+            try await self?.useCases.rates.updateRate(rate: rate)
         }
     }
 }

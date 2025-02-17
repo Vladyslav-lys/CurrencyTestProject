@@ -39,4 +39,10 @@ public final class RatesService: BaseService, RatesUseCases {
             }
         }
     }
+    
+    public func updateRate(rate: Rate) async throws {
+        try await perform { [unowned self] in
+            try await context.database.update(rate)
+        }
+    }
 }

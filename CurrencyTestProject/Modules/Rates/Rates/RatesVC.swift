@@ -8,19 +8,19 @@
 import UIKit
 import Services
 
-enum Section: Int {
-    case rates
-}
-
-enum Item: Equatable, Hashable {
-    case rate(rate: Rate)
-}
-
 extension RatesVC: Makeable {
     static func make() -> RatesVC { RatesVC() }
 }
 
 final class RatesVC: BaseVC, ViewModelContainer {
+    enum Section: Int {
+        case rates
+    }
+
+    enum Item: Equatable, Hashable {
+        case rate(rate: Rate)
+    }
+    
     // MARK: - View model
     var viewModel: RatesVM?
     
@@ -90,6 +90,18 @@ final class RatesVC: BaseVC, ViewModelContainer {
 // MARK: - CollectionAdapterDelegate
 extension RatesVC: CollectionAdapterDelegate {
     func collectionAdapterDidSelectItem<Section, Item>(_ adapter: CollectionAdapter<Section, Item>, item: Item) {
-        // TODO: - Implementation will be later
+        guard let ratesItem = item as? RatesVC.Item else { return }
+        switch ratesItem {
+        case .rate(let rate):
+            var rate = rate
+            rate.isFavorite.toggle()
+            viewModel?.updateRate(rate: rate)
+            let newItem = RatesVC.Item.rate(rate: rate) as? Item
+            DispatchQueue.main.async {
+                var snapshot = adapter.dataSource.snapshot()
+                newItem.flatMap { snapshot.update(item, to: $0) }
+                adapter.dataSource.apply(snapshot)
+            }
+        }
     }
 }

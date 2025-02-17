@@ -9,4 +9,5 @@ import Foundation
 
 public protocol RatesUseCases {
     func getLatesRates() async throws -> [Rate]
+    func updateRate(rate: Rate) async throws
 }

@@ -9,6 +9,7 @@ import DatabaseLayer
 import NetworkLayer
 
 public class BaseService {
+    @discardableResult
     func perform<T>(completion: @escaping () async throws -> T) async throws -> T {
         do {
             return try await completion()
