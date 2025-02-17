@@ -1,7 +1,7 @@
 # CurrencyTestProject
  
 ### Overview
-<img src="https://imgur.com/a/VAZ93Pi" width="375" height="667">
+<img src="https://i.imgur.com/mQo7r2W.png" width="375" height="667">
 
 The application consists of a single screen displaying a list of currencies and their exchange rates relative to each other.
 
