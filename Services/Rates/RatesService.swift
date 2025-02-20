@@ -32,6 +32,7 @@ public final class RatesService: BaseService, RatesUseCases {
                     .latest
                     .map(Rate.init)
                 let rates = try await context.database.update(networkRates)
+                    .map(Rate.init)
                     .sorted { $0.quoteCurrency < $1.quoteCurrency }
                 return rates
             } else {

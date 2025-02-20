@@ -94,7 +94,7 @@ extension RatesVC: CollectionAdapterDelegate {
         switch ratesItem {
         case .rate(let rate):
             var rate = rate
-            rate.isFavorite.toggle()
+            rate.isFavorite = rate.isFavorite.flatMap { !$0 } ?? true
             viewModel?.updateRate(rate: rate)
             let newItem = RatesVC.Item.rate(rate: rate) as? Item
             DispatchQueue.main.async {

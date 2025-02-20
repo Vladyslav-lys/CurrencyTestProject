@@ -20,7 +20,7 @@ extension Rate: CoreDataPersistable {
         object.baseCurrency = baseCurrency
         object.quote = quote
         object.quoteCurrency = quoteCurrency
-        object.isFavorite = isFavorite
+        object.isFavorite = isFavorite ?? object.isFavorite
     }
 }
 

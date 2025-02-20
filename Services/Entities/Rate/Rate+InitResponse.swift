@@ -13,6 +13,5 @@ extension Rate {
         baseCurrency = response.baseCurrency
         quoteCurrency = response.quoteCurrency
         quote = NSDecimalNumber(string: response.quote)
-        isFavorite = false
     }
 }

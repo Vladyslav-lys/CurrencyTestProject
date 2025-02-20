@@ -120,20 +120,22 @@ extension CDDatabase {
 
 // MARK: - Update
 extension CDDatabase {
-    public func update<T: CoreDataPersistable>(_ object: T, in context: Context = .background) async throws -> T {
+    public func update<T: CoreDataPersistable>(_ object: T, in context: Context = .background) async throws -> T.ManagedObject {
         try await perform(in: managedObjectContext(for: context)) {
             let entity = try $0.fetchOrCreate(for: object)
             try object.update(entity)
             try $0.saveIfNeeded()
-            return object
+            return entity
         }
     }
     
-    public func update<T: CoreDataPersistable>( _ values: [T], in context: Context = .background) async throws -> [T] {
+    public func update<T: CoreDataPersistable>( _ values: [T], in context: Context = .background) async throws -> [T.ManagedObject] {
         try await perform(in: managedObjectContext(for: context)) { context in
-            try values.forEach { object in
+            let values = try values.map { object in
                 let entity = try context.fetchOrCreate(for: object)
+                print("lol \(entity)")
                 try object.update(entity)
+                return entity
             }
             try context.saveIfNeeded()
             return values

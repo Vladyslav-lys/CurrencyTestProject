@@ -61,7 +61,7 @@ final class RateCVC: UICollectionViewCell {
     func configure(rate: Rate) {
         currenciesLabel.text = "\(rate.baseCurrency) - \(rate.quoteCurrency)"
         quoteLabel.text = "\(String(format: "%.3f", rate.quote.doubleValue))"
-        starImageView.image = rate.isFavorite ? R.image.icFavorite() : R.image.icNotFavorite()
+        starImageView.image = rate.isFavorite == true ? R.image.icFavorite() : R.image.icNotFavorite()
     }
     
     // MARK: - Setup

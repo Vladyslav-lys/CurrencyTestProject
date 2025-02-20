@@ -12,5 +12,5 @@ public struct Rate: Hashable, Equatable {
     public var quoteCurrency: String
     public var quote: NSDecimalNumber
     public var date: Date
-    public var isFavorite: Bool
+    public var isFavorite: Bool?
 }
