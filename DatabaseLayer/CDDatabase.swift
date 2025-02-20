@@ -133,7 +133,6 @@ extension CDDatabase {
         try await perform(in: managedObjectContext(for: context)) { context in
             let values = try values.map { object in
                 let entity = try context.fetchOrCreate(for: object)
-                print("lol \(entity)")
                 try object.update(entity)
                 return entity
             }
